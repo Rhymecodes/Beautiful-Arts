@@ -20,6 +20,54 @@
             background-size: cover;
             background-position: center;
         }
+
+        .gallery-card {
+            border: none;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            height: 100%;
+        }
+        
+        .gallery-card:hover {
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-5px);
+            
+        }
+        
+        .gallery-card-img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .gallery-card:hover .gallery-card-img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-card-body {
+            padding: 1.5rem;
+        }
+        
+        .gallery-card-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #212529;
+        }
+        
+        .gallery-card-artist {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 0.75rem;
+        }
+        
+        .gallery-card-text {
+            font-size: 0.95rem;
+            color: #495057;
+            margin-bottom: 1rem;
+        }
     </style>
 </head>
 
@@ -27,7 +75,7 @@
     <!--  navigation bar -->
     <nav class="navbar navbar-expand-lg bg-primary position-relative z-3">
         <div class="container py-4">
-            <a class="navbar-brand" href="#home">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/svg/logo.svg" alt="logo" class="img-fluid me-4" width="40" rcset="">
             </a>
             <button class="navbar-toggler bg-warning  rounded-5 border-none" type="button" data-bs-toggle="collapse"
@@ -66,5 +114,93 @@
             </div>
         </div>
     </nav>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- African Heritage -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card gallery-card">
+                        <img src="../Beautiful_Arts/assets/images/African_Heritage.jpg" class="gallery-card-img" alt="African Heritage artwork">
+                        <div class="gallery-card-body">
+                            <h5 class="gallery-card-title">African Heritage</h5>
+                            <p class="gallery-card-artist">By Jabari Roots</p>
+                            <p class="gallery-card-text">This is a digital composite/photo manipulation artwork blending portraiture with African landscapes and cultural symbolism. A woman's profile is merged...</p> 
+                            <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Monalisa -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card gallery-card">
+                        <img src="../Beautiful_Arts/assets/images/Monalisa.jpg" class="gallery-card-img" alt="Monalisa artwork">
+                        <div class="gallery-card-body">
+                            <h5 class="gallery-card-title">Mona Lisa</h5>
+                            <p class="gallery-card-artist">By Leonardo da Vinci</p>
+                            <p class="gallery-card-text">The Mona Lisa is perhaps the most iconic painting in art history, created by Italian Renaissance master Leonardo da Vinci between 1503 and 1519. This oil painting on poplar...</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dissolution -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card gallery-card">
+                        <img src="../Beautiful_Arts/assets/images/Dissolution.jpg" class="gallery-card-img" alt="Dissolution artwork">
+                        <div class="gallery-card-body">
+                            <h5 class="gallery-card-title">Dissolution</h5>
+                            <p class="gallery-card-artist">By Lucas Flame</p>
+                            <p class="gallery-card-text">This is an expressive pen and ink drawing featuring a face with surreal, flowing organic forms emerging from and dissolving around it. The artist uses intricate line work...</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tree of Life -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card gallery-card">
+                        <img src="../Beautiful_Arts/assets/images/Tree_of_Life.jpg" class="gallery-card-img" alt="Tree of Life artwork">
+                        <div class="gallery-card-body">
+                            <h5 class="gallery-card-title">Tree of Life</h5>
+                            <p class="gallery-card-artist">By Nathaniel Grove</p>
+                            <p class="gallery-card-text">This is a conceptual drawing that merges human and nature imagery. The artwork features a woman's face emerging from or integrated with tree branches and wood grain ...</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A Garden Of Solitude -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card gallery-card">
+                        <img src="../Beautiful_Arts/assets/images/Solitude.jpg" class="gallery-card-img" alt="Solitude artwork">
+                        <div class="gallery-card-body">
+                            <h5 class="gallery-card-title">A Garden of Solitude</h5>
+                            <p class="gallery-card-artist">By Yaroslav Shuraev</p>
+                            <p class="gallery-card-text">This evocative photograph by Yaroslav Shuraev captures a moment of intimate contemplation set against a dreamlike backdrop. Two figures occupy a richly...</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Burning Light -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card gallery-card">
+                        <img src="../Beautiful_Arts/assets/images/Burning_Light.jpg" class="gallery-card-img" alt="Burning Light artwork">
+                        <div class="gallery-card-body">
+                            <h5 class="gallery-card-title">Burning Light</h5>
+                            <p class="gallery-card-artist">By Lucas Flame</p>
+                            <p class="gallery-card-text">This is a grayscale digital illustration or drawing depicting a lit candle with melting wax dripping down its sides, set against a dark background. The dramatic lighting...</p>
+                            <a href="#" class="btn btn-primary btn-sm">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
