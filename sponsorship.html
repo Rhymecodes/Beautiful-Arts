@@ -20,6 +20,18 @@
             background-size: cover;
             background-position: center;
         }
+
+        .qr-code {
+            width: 200px;
+            height: 200px;
+            background-color: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 0.5rem;
+            margin: 1rem auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
 </head>
 
@@ -67,28 +79,56 @@
         </div>
     </nav>
 
-    <!-- home section -->
-
-    <section id="home" class="min-vh-100">
-        <div class="position-absolute top-0 start-0 w-100 vh-100 bg-primary opacity-50 z-1"></div>
-        <div class="position-relative py-5 z-3">
-            <div class="container p-5">
-                <h1 class="display-1 fw-bold text-warning">Beautiful Arts Gallery</h1>
-                <h3 class="display-6 text-warning">Museum of Arts</h3>
-                <h5 class="fs-6 text-warning">a blend of modernand midevil ages</h5>
-                <p class="lead fs-2 fw-lighter text-light mt-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quaerat
-                    ad optio sapiente itaque?
-                    Vel delectus quisquam, impedit distinctio ea harum alias totam mollitia. Expedita quaerat nostrum
-                    aut in vitae!</p>
-
-                <button type="button" class="btn  btn-lg btn-warning mt-4"> support us </button>
+    <!-- Impact Section -->
+    <section class="impact-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Your Impact</h2>
+            <div class="impact-content">
+                <div class="impact-text">
+                    <p class="impact-paragraph">Every sponsorship dollar directly supports our mission to make art accessible, nurture emerging talent, and create meaningful cultural experiences for our community.</p>
+                    
+                    <p class="impact-paragraph">From educational programs that introduce thousands of students to the arts, to exhibitions that challenge perspectives and inspire dialogue, your partnership makes it all possible.</p>
+                    
+                    <p class="impact-paragraph">Together, we're building a more vibrant, creative, and connected community through the transformative power of art.</p>
+                </div>
+                <div class="impact-image">
+                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=600&fit=crop" alt="Artist at work">
+                </div>
             </div>
-
         </div>
-
-
-
     </section>
-</body>
 
+    <!-- Payment Section -->
+    <section class="payment-section">
+        <div class="container">
+            <h2 class="payment-title">Support Us</h2>
+            <div class="payment-methods">
+                <!-- M-Pesa -->
+                <div class="payment-card">
+                    <h4>M-Pesa</h4>
+                    <p>Scan the QR code or click the button below to donate via M-Pesa</p>
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.mpesa.com" alt="M-Pesa QR Code" style="width: 100%; height: 100%;">
+                    </div>
+                    <a href="tel:*714*12345#" class="payment-link">
+                        <button class="btn btn-primary">Donate via M-Pesa</button>
+                    </a>
+                </div>
+
+                <!-- PayPal -->
+                <div class="payment-card">
+                    <h4>PayPal</h4>
+                    <p>Scan the QR code or click the button below to donate via PayPal</p>
+                    <div class="qr-code">
+                        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://www.paypal.com/donate" alt="PayPal QR Code" style="width: 100%; height: 100%;">
+                    </div>
+                    <a href="https://www.paypal.com/donate" target="_blank" class="payment-link">
+                         <button class="btn btn-primary">Donate via PayPal</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
 </html>
