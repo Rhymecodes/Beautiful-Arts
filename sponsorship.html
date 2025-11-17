@@ -32,6 +32,23 @@
             align-items: center;
             justify-content: center;
         }
+
+        .impact-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+        }
+
+        .payment-card {
+            background-color: white;
+            border: 2px solid #e9ecef;
+            border-radius: 0.75rem;
+            padding: 2.5rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            flex: 0 1 320px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
     </style>
 </head>
 
@@ -80,28 +97,28 @@
     </nav>
 
     <!-- Impact Section -->
-    <section class="impact-section">
+    <section class="impact-section py-5" >
         <div class="container">
-            <h2 class="section-title" style="color: white;">Your Impact</h2>
-            <div class="impact-content">
-                <div class="impact-text">
+            <h2 class="section-title font-weight-bold text-center font-family-sans-serif">Your Impact</h2>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 impact-text text-primary">
                     <p class="impact-paragraph">Every sponsorship dollar directly supports our mission to make art accessible, nurture emerging talent, and create meaningful cultural experiences for our community.</p>
                     
                     <p class="impact-paragraph">From educational programs that introduce thousands of students to the arts, to exhibitions that challenge perspectives and inspire dialogue, your partnership makes it all possible.</p>
                     
                     <p class="impact-paragraph">Together, we're building a more vibrant, creative, and connected community through the transformative power of art.</p>
                 </div>
-                <div class="impact-image">
-                    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=600&fit=crop" alt="Artist at work">
+                <div class="col-12 col-md-6 impact-image">
+                    <img src="../Beautiful_Arts/assets/images/Melting_Time.jpg" alt="Artist at work">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Payment Section -->
-    <section class="payment-section">
+    <section class="payment-section py-5 bg-light">
         <div class="container">
-            <h2 class="payment-title">Support Us</h2>
+            <h2 class="payment-title font-weight-bold text-center font-family-sans-serif">Support Us</h2>
             <div class="payment-methods">
                 <!-- M-Pesa -->
                 <div class="payment-card">
